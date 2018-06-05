@@ -1,0 +1,23 @@
+The following file provides a brief overview of the classes used in the project:
+
+
+RunFile.java: main code file, initialising all data structures and runing all the desired codes;
+
+Read_SQL.java: read information from SQL data base and sort it according the designated data structrure;
+
+Object.java:class structure with voltage, angle, time and substration ID;
+
+Point.java: array of objects describing the grid, in this case it is comprised of 9 objects due to the existing 9 buses;
+
+Initialize.java:randomize centroids and assign closest point to these centroids;
+
+k_means_clustering.java: run k-means algorithm, relocating the centroid positioning based on the points from data acquired;
+
+labeling_clusters.java: label each cluster based on certain conditions described in the report annexed;
+
+k_nearest_neighbor.java: run kNN algorithm for the testing set comprised of the analog_values from SQL database;
+
+NOT USED:
+standardization: procedure to standardise data due to large discrepancy in voltage angle and magnitude values, which
+ended up not beign used because the same result was achieved and it would require either conversion to the non-standardize
+data to label it correctly or double the memory usage;
